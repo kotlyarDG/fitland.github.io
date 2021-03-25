@@ -12,11 +12,22 @@
 		justify-content: space-between;
 		position: relative;
 		z-index: 3;
+
+		@media (max-width: 1220px) {
+			flex-direction: column;
+		}
 	}
 
 	&__map {
 		width: 340px;
-		height: 230px;
+		// height: 230px;
+		@media (max-width: 1220px) {
+			margin: 0 0 50px 0;
+		}
+
+		@media (max-width: 550px) {
+			width: 100%;
+		}
 
 		img {
 			max-width: 100%;
@@ -26,9 +37,15 @@
 	&__logo {
 		height: 135px;
 		width: 180px;
+		@media (max-width: 1220px) {
+			margin: 0 0 50px 0;
+		}
 	}
 
 	&__documents {
+		@media (max-width: 1220px) {
+			margin: 0 0 50px 0;
+		}
 	}
 
 	&__documents-item {
@@ -48,6 +65,9 @@
 
 	&__links {
 		padding: 0 100px 0 0;
+		@media (max-width: 1220px) {
+			margin: 0 0 50px 0;
+		}
 	}
 
 	&__link-item {
@@ -100,4 +120,14 @@
 	z-index: 1;
 	bottom: 20%;
 	left: 0;
+
+	@media (max-width: 1220px) {
+		display: none;
+	}
+}
+
+.footer__flex {
+	display: flex;
+	justify-content: space-around;
+	flex: 0 1 50%;
 }

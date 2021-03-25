@@ -32,9 +32,13 @@ body {
 	top: 70px;
 	left: 0;
 	z-index: 5;
-	// height: calc(200vh - 170px);
+	max-height: calc(200vh + 170px);
 	// min-height: 1600px;
 	overflow: hidden;
+
+	@media (max-width: 768px) {
+		display: none;
+	}
 }
 
 .first-block {
@@ -45,6 +49,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	padding: 50px 10px;
+	background: url("../../images/system_img/bg-first.png") center / cover no-repeat;
+	z-index: 1;
 
 	&__bg {
 		position: absolute;
@@ -54,6 +60,10 @@ body {
 		width: 100%;
 		display: block;
 		z-index: 1;
+
+		@media (max-width: 768px) {
+			display: none;
+		}
 	}
 
 	&__body {
@@ -63,11 +73,19 @@ body {
 		flex-direction: column;
 		max-width: 1000px;
 		align-items: center;
+
+		@media (max-width: 1100px) {
+			padding: 0 30px;
+		}
 	}
 
 	&__logo {
 		display: block;
 		margin: 0 0 54px 0;
+
+		@media (max-width: 450px) {
+			width: 260px;
+		}
 	}
 
 	&__text {
@@ -98,7 +116,11 @@ body {
 		position: relative;
 		z-index: 3;
 
-		&:before {
+		@media (max-width: 500px) {
+			font-size: 20px;
+			line-height: 25px;
+
+			width: 300px;
 		}
 	}
 
@@ -113,6 +135,10 @@ body {
 		border-radius: 20px;
 		background: linear-gradient(92.5deg, #e7dcc9 0%, rgba(231, 220, 201, 0) 100%);
 		z-index: 2;
+
+		@media (max-width: 500px) {
+			width: 300px;
+		}
 	}
 
 	&__arrows {
@@ -126,6 +152,10 @@ body {
 	margin: -100px 0 0 0;
 	position: relative;
 	z-index: 0;
+
+	@media (max-width: 991px) {
+		flex-direction: column;
+	}
 
 	&__personal {
 		flex: 0 1 50%;
@@ -158,6 +188,11 @@ body {
 		color: #ffffff;
 		position: relative;
 		z-index: 1;
+
+		@media (max-width: 550px) {
+			font-size: 30px;
+			line-height: 35px;
+		}
 	}
 
 	&__abonements {
