@@ -32,8 +32,8 @@ body {
 	top: 70px;
 	left: 0;
 	z-index: 5;
-	height: calc(200vh - 170px);
-	min-height: 1600px;
+	// height: calc(200vh - 170px);
+	// min-height: 1600px;
 	overflow: hidden;
 }
 
@@ -129,7 +129,7 @@ body {
 
 	&__personal {
 		flex: 0 1 50%;
-		background: url("../../images/system_img/personal.png") center / cover no-repeat;
+		background: url("../images/system_img/personal.png") center / cover no-repeat;
 		display: flex;
 		align-items: center;
 		position: relative;
@@ -162,7 +162,7 @@ body {
 
 	&__abonements {
 		flex: 0 1 50%;
-		background: url("../../images/system_img/abonements.png") center / cover no-repeat;
+		background: url("../images/system_img/abonements.png") center / cover no-repeat;
 		display: flex;
 		align-items: center;
 		position: relative;

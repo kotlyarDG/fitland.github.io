@@ -1,4 +1,4 @@
 // Проверка, загрузилась ли страница
-$(document).ready(function(){
+// $(document).ready(function(){
 
-});
+// });
