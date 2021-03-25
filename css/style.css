@@ -95,6 +95,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (min-height: 1050px) {
+  .bg-wrapper {
+    max-height: auto;
+    max-width: 100vw;
+    height: 300vh;
+  }
+  .bg-wrapper img {
+    height: 100%;
+  }
+}
+
 .first-block {
   position: relative;
   width: 100%;
