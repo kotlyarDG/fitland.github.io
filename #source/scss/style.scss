@@ -163,6 +163,8 @@ body {
 	}
 
 	&__arrows {
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__arrow {

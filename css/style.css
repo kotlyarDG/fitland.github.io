@@ -254,6 +254,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.first-block__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .first-block__arrow {
   display: block;
   -webkit-animation-name: vectors;
