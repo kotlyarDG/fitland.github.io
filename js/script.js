@@ -10,4 +10,11 @@ $(document).ready(function () {
 		$('.popup').removeClass('open');
 	});
 
+	$(document).on('click', '.class-link', function () {
+		var linkID = $(this).attr('data-link');
+		$('html, body').animate({
+			scrollTop: $(linkID).offset().top
+		}, 'slow');
+	});
+
 });

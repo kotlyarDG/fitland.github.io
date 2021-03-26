@@ -124,6 +124,7 @@ body {
 		height: 77px;
 		display: block;
 		margin: 0 0 45px 0;
+		transition: 0.3s;
 
 		position: relative;
 		z-index: 3;
@@ -133,6 +134,13 @@ body {
 			line-height: 25px;
 
 			width: 300px;
+		}
+
+		&:hover {
+			transform: translateY(1px);
+			& + .first-block__btn-border {
+				transform: translateY(1px);
+			}
 		}
 	}
 
@@ -147,6 +155,7 @@ body {
 		border-radius: 20px;
 		background: linear-gradient(92.5deg, #e7dcc9 0%, rgba(231, 220, 201, 0) 100%);
 		z-index: 2;
+		transition: 0.3s;
 
 		@media (max-width: 500px) {
 			width: 300px;
@@ -154,6 +163,39 @@ body {
 	}
 
 	&__arrows {
+	}
+
+	&__arrow {
+		display: block;
+		animation-name: vectors;
+		animation-duration: 2.2s;
+		animation-iteration-count: infinite;
+
+		&:nth-child(1) {
+			animation-delay: 0.4s;
+		}
+
+		&:nth-child(2) {
+			animation-delay: 0.2s;
+		}
+
+		&:nth-child(3) {
+			animation-delay: 0s;
+		}
+	}
+}
+
+@keyframes vectors {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(5px);
+	}
+
+	100% {
+		transform: translateY(0);
 	}
 }
 
@@ -311,6 +353,11 @@ body {
 		display: block;
 		margin: 0 0 13px 0;
 		cursor: pointer;
+		transition: 0.3s;
+
+		&:hover {
+			transform: rotate(-360deg);
+		}
 	}
 
 	&__items {
@@ -397,6 +444,11 @@ body {
 		border: 3px solid #323232;
 		box-sizing: border-box;
 		border-radius: 25px;
+		transition: 0.3s;
+
+		&:hover {
+			transform: translateY(1px);
+		}
 	}
 }
 
